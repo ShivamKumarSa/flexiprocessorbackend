@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb+srv://inderpreet2210:YZYkw2OhXmN98upC@cluster0.hter8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "username": "inderpreet2210",
+    "password": "YZYkw2OhXmN98upC"
+}

@@ -1,0 +1,12 @@
+import * as admin from 'firebase-admin';
+
+// Initialize Firebase
+export const app: admin.app.App = admin.initializeApp({
+  credential: admin.credential.cert({
+    projectId: 'flexi-processor-dev',
+    privateKey:
+      '-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDPmNHiLFsYFqTj\nhdPccBW9MEQYMV+RgvdR7/+INEpc9C7NtJTsp7zHTqnH6PqEWuOwEJftJSSN5FXx\nIIN9cBNHotR7H0yM3ai8wEZqZD36N6w8dG4vjIsd4oeKcPDPL5fBcbWNTaxoWL9o\nNzu0Bcv5imx8z6QfUee+GYm/uNeKzrOJ2FZDei4omZzt+jSNYa6W8gSbgf4uMcUc\ncCIkWw2aXWjkrrkgpw4Q2omiMd2jnxbxYxbdoUnsgxD6ACcmq3TDUfM4ngyhlrUl\nc3p/R6+fMY6U89ofIKrJNhb4rR91JLyckNhPy2293mP/U3H61l1ytIqHdH9fU2ee\ngRN/q8MxAgMBAAECggEAAidrxhT/vPg/Lb0tvZPMJfJiQn4Ap9ncBxWeaSNhwiUm\ndyvwf6Qd6VN/n3tjXgwzYJhLe0JvZql/2sijlKGdEZk26zAf8zY5kfvMvz3bBsWd\nG+N5YTTsHJtFHMKfPQcZZAByCc1MhKinE8W+8Nc+jpBJH+JnqYuIBAjvzPV2BxKp\nLdzxEzA/nnYjDVc9ZvDhNLJtvlRkM3DqT+Xfsk03dkGD76eBpYjVzbBOZzRauijF\nLhMmizt13fHZmWxd8bZHqMnzWt8NgS3kUewk6rmQmI5CW27jtsJHr6LFsDtVZlkQ\nFeVJoCGfo5pLUPfgKuFEB0zXeBYgGFZL4BATDhuFgQKBgQD5GTISyzIb0G9EG2Yh\n0e16RsyfHAE0TNd9qZJ0Ko1+CfPCQu2l1O03AbYWWTjSFF27bRnShHoN9ctDAUcs\nZpWcn0WYl348zjs/+PRXAJxakxes+qFkcE123v/o6ZqBjG++ORdce1AvxyZBhvqG\nFpgmRZYv/ltmMb2WrLTYOGnFZQKBgQDVWUNGbr98PeeEsJYNZMJ0ePFHGEyiylgc\n+lNKhYGaTckzvpNovT0Z36pwdRx1h+pD24DAcH4pXTl7a+9t66vqj92eFa05Jmhy\nO2F1PPtmUc19k9RJZEk/PZ2WVvhnEHBQGStbrBrztr6QrVuBcUGjYwCzCH9uFhi/\nfd0g216/3QKBgAtXglgouFdb3jUTqkrP7CgtIRP9inB/LzChj/GKHncmrNqjgX6T\ne1mN0mSiG1w1YS8vgIV9UrFgB6k9Xag/44AGIH0aKL1MBpabF0T+2h+louZVYxPX\nqS9IaA6K1GYhptTadJ3ZX4VNZAiHxNBmJvdXI8d7pV251hAOPQ27Q9WhAoGAHlBw\nnrFdw+mH2/K7X2vRtXr5zYBGY1sc6gEnlI8juykSTafmihtZczO0pAX/5TNKthma\nUb2qL3ZvlHnhq1yxMMMAWlX6JwSuEo0da+seTYuSByXaJBN71OCMY7A3220aiEcL\nQhtSOQ7eRPBc8CeHjA+lKcsrUBkTqyHXKbQB4oECgYEAtnxuKkw8DbPQKwOR/tGx\nku8yjKaNqQSXqO9cNirgTmAv5HV6DAC/WO07o/s+66jan3UE2ZAS00SMbPiRUOSC\nWfb5DKjB5iadwjWLkKUb9qAcpiaflB0VgNX7cBXwE6w7kpcxEQWeUxqUbynXz6Bx\nouAmdOG1RwyUZ9s96+ghH9U=\n-----END PRIVATE KEY-----\n',
+    clientEmail: 'firebase-adminsdk-e1yxu@flexi-processor-dev.iam.gserviceaccount.com',
+  }),
+});
+export const auth = admin.auth();
